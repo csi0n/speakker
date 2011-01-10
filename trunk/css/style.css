@@ -5,7 +5,7 @@ mark, rp, rt, ruby, summary, time{ display: inline }
 
 /* Site-wide properties */
 body{
-	background:#52576a;
+	background:#60667b;
 	font: normal normal 12px/12px Tahoma, Arial, Helvetica, Verdana, sans-serif; 
 }
 	
@@ -78,7 +78,7 @@ h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }
 	text-shadow: 1px 1px 1px #111;
 }
 /* THEME light */
-.light #skOpener.close {
+.dark #skOpener.close {
 	background:transparent url('../img/light/sk-close.png') right top no-repeat;
 	width:26px;
 	height:28px;
@@ -86,7 +86,7 @@ h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }
 	cursor:pointer;
 	margin-top:1px;
 }
-.light #skOpener {
+.dark #skOpener {
 	background:transparent url('../img/light/sk-open.png') right top no-repeat;
 	width:26px;
 	height:28px;
@@ -94,46 +94,46 @@ h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }
 	cursor:pointer;
 	margin-top:1px;
 }
-.light #skForwards {
+.dark #skForwards {
 	background:transparent url('../img/light/sk-forwards.png') left top no-repeat;
 	width:20px;
 	height:32px;
 	float:left;
 	cursor:pointer;
 }
-.light #skBackwards {
+.dark #skBackwards {
 	background:transparent url('../img/light/sk-backwards.png') left top no-repeat;
 	width:20px;
 	height:32px;
 	float:left;
 	cursor:pointer;
 }
-.light #skPlay {
+.dark #skPlay {
 	background:transparent url('../img/light/sk-play.png') left top no-repeat;
 	width:32px;
 	height:33px;
 	float:left;
 	cursor:pointer;
 }
-.light #skHeart {
+.dark #skHeart {
 	background:transparent url('../img/light/sk-heart.png') left top no-repeat;
 	width:18px;
 	height:25px;
 	float:left;
 }
-.light #skMute,
-.light #skLoud {
+.dark #skMute,
+.dark #skLoud {
 	background:transparent url('../img/light/sk-mute.png') left top no-repeat;
 	width:26px;
 	height:32px;
 	float:left;
 	cursor:pointer;
 }
-.light #skLoud {
+.dark #skLoud {
 	background:transparent url('../img/light/sk-loud.png') left top no-repeat;
 	float:right;
 }
-.light #skLoop {
+.dark #skLoop {
 	background:transparent url('../img/light/sk-loop.png') left top no-repeat;
 	width:26px;
 	height:32px;
@@ -292,13 +292,17 @@ a#skUrl {
 	cursor:pointer;
 }
 #skLabel {
-	background:transparent url('../img/sk-label.png') top left no-repeat;
+	background:transparent url('../img/sk-label.png') left top no-repeat;
 	width:94px;
 	height:75px;
 	position:absolute;
 	top:17px;
 	left:17px;
 	z-index:8;
+}
+/* WHEN NO COVER ADDED */
+#skCover {
+	background:transparent url('../img/sk-nocover.png') left top no-repeat;
 }
 #skMainControl,
 #skActControl { 
