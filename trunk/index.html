@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Speakker | The new way of sound</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="description" content="Audioplayer from a new generation">
+<link rel="Shortcut Icon" type="image/ico" href="img/speakker.ico">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/queries/netbooks-tablets.css" type="text/css" media="screen and (max-width: 1007px)" />
+								
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#skOpener').click(function () {
+			$(this).toggleClass('close');
+			$('#skBiglayer').slideToggle('slow');
+		});
+			$('#skOpener').trigger('click');
+	});
+	$(function(){
+		$('.jspPane').jScrollPane({showArrows: true});
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<!--[if IE]><link rel="stylesheet" href="css/ie/ie7.css" type="text/css" media="screen"><![endif]-->
+</head>
+<body>
+	<div id="wrap">
+		<div id="logo"><img src="img/speakker-light.png" alt="speakker a projekktor projekkt"></div>
+		<div id="speakker" class="light">
+			<!--General Control-->
+			<div id="skControls">
+				<div id="skMainControl">
+					<div id="skBackwards"></div>
+					<div id="skPlay" class="expand"></div>
+					<div id="skForwards"></div>
+				</div>
+				<!--Act Control-->
+				<div id="skActControl">
+					<div id="skHeart"></div>
+					<div id="skAct">Tame Impala - Why Won't You Make Up Your Mind</div>
+					<div id="skTime">3:19 | 0:05</div>
+					<div id="skScrubbler"></div>
+					<div id="skLoad" style="width:80%;"></div>
+					<div id="skTimeRemain" style="width:40%;"></div>
+				</div>
+				<!--Volume Control-->
+				<div id="skVolumeControl">
+					<div id="skMute"></div>
+					<div id="skVolumeWidth">
+						<div id="skVolume"></div>
+						<div id="skVolumeRemain" style="width:40%;"></div>
+					</div>
+					<div id="skLoud"></div>
+				</div>
+				<div id="skLoop"></div>
+				<!--Opener Control-->
+				<div id="skOpener"></div>
+			</div>
+			<div id="skBiglayer">
+				<!--Right Block-->
+				<div id="skRightBlock">
+					<div id="skLabel"></div>
+					<div id="skCover"><img src="img/sk-nocover.png" class="no-cover" alt="cover" /></div>
+					<ul id="skWiki">
+						<li><a class="lastfm" href="http://www.last.fm/music/Tame+Impala" target="_blank">Last.fm</a></li>
+						<li><a class="wiki" href="http://en.wikipedia.org/wiki/Tame_Impala" target="_blank">Wikipedia</a></li>
+					</ul>
+				</div>
+				<!--Middle Block-->
+				<div id="skMiddleBlock" class="jspContainer">
+					<div class="jspPane" style="height:160px;">
+						<ul id="skArtistlist">
+							<li><a class="active" href="#">01. Tame Impala - Why Won't You Make Up Your Mind</a></li>
+							<li><a href="#">02. Chico Magnetic Band - My Sorrow</a></li>
+							<li><a href="#">03. Brains - Black on Black</a></li>
+							<li><a href="#">04. Monkey3 – Watching You (feat. John Garcia)</a></li>
+							<li><a href="#">05. Ray Barretto – The Soul Drummers</a></li>
+							<li><a href="#">06. Led Zeppelin - No Quarter</a></li>
+							<li><a href="#">07. The Undisputed Truth – Smiling Faces Sometimes</a></li>
+							<li><a href="#">08. Mananana - Dududu</a></li>
+							<li><a href="#">09. Mananana - Dududu</a></li>
+							<li><a href="#">10. Mananana - Dududu</a></li>
+							<li><a href="#">11. Mananana - Dududu</a></li>
+							<li><a href="#">12. Mananana - Dududu</a></li>
+							<li><a href="#">13. Mananana - Dududu</a></li>
+							<li><a href="#">14. Mananana - Dududu</a></li>
+							<li><a href="#">15. Mananana - Dududu</a></li>
+							<li><a href="#">16. Mananana - Dududu</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--Copyright Block-->
+				<p id="skCopyright">
+					<a id="skEdit" href="#">edit playlist</a>
+					<a id="skUrl" href="http://www.speakker.com" target="_blank">speakker under the hood</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/noise.js"></script>
+</body>
+</html>
