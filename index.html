@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Speakker | The new way of sound</title>
+<title>Speakker | The new way of Audio</title>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="description" content="Audioplayer from a new generation">
 <link rel="Shortcut Icon" type="image/ico" href="img/speakker.ico">
@@ -20,19 +20,18 @@
 			$('#skBiglayer').slideToggle('slow');
 		});
 			$('#skOpener').trigger('click');
-	});
-	$(function(){
-		$('.jspPane').jScrollPane({showArrows: true});
+			$('.jspPane').jScrollPane({showArrows: true});
 	});
 </script>
 <!--[if lt IE 9]>
-	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<script type="text/javascript" src="js/centeredBox.js"></script>
 <![endif]-->
 <!--[if IE]><link rel="stylesheet" href="css/ie/ie7.css" type="text/css" media="screen"><![endif]-->
 </head>
 <body>
 	<div id="wrap">
 		<div id="logo"><img src="img/speakker-dark.png" alt="speakker a projekktor projekkt"></div>
+		<!--speakker code-->
 		<div id="speakker" class="dark">
 			<!--General Control-->
 			<div id="skControls">
@@ -59,15 +58,18 @@
 					</div>
 					<div id="skLoud"></div>
 				</div>
-				<div id="skLoop"></div>
-				<!--Opener Control-->
-				<div id="skOpener"></div>
+				<div id="skModuleControl">
+					<!--Loop Optinal-->
+					<div id="skLoop"></div>
+					<!--Opener Control-->
+					<div id="skOpener"></div>
+				</div>
 			</div>
 			<div id="skBiglayer">
 				<!--Right Block-->
-				<div id="skRightBlock">
+				<div id="skLeftBlock">
 					<div id="skLabel"></div>
-					<div id="skCover"><img src="img/sk-nocover.png" class="no-cover" alt="cover" /></div>
+					<div id="skCover"><img src="img/album-cover.png" alt="album-cover" /></div>
 					<ul id="skWiki">
 						<li><a class="lastfm" href="http://www.last.fm/music/Tame+Impala" target="_blank">Last.fm</a></li>
 						<li><a class="wiki" href="http://en.wikipedia.org/wiki/Tame_Impala" target="_blank">Wikipedia</a></li>
@@ -96,6 +98,9 @@
 						</ul>
 					</div>
 				</div>
+				<div id="skRightBlock">
+					<a href="#" id="skFacebook" title="share your mix on facebook">share your mix on facebook</a>
+				</div>
 				<!--Copyright Block-->
 				<p id="skCopyright">
 					<a id="skEdit" href="#">edit playlist</a>
@@ -103,6 +108,7 @@
 				</p>
 			</div>
 		</div>
+		<!--speakker code end-->
 	</div>
 	<script type="text/javascript" src="js/noise.js"></script>
 </body>
