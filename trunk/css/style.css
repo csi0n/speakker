@@ -68,12 +68,30 @@ h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }
 #speakker a:hover { color:#b52b09}
 
 
-/* INDIVIDUAL WITDH FOR BOTTOM PLAYER - MINIMAL WIDTH POSSIBLE 810PX  */
+/* INDIVIDUAL WITDH FOR BOTTOM PLAYER - MINIMAL WIDTH POSSIBLE 790PX  */
 
-				#speakker {	width:810px; } /* your layout wrap => minimal width  */
-		#skActControl,
-		#skScrubbler  { min-width:388px; } /* width:388px; = 810px | width:520px; => 960px */
-		#skRightBlock { width:90px;} /* width:90px; = minimal-width 810px | width:240px; => 960px */
+	#speakker.maxi {	width:960px; } /* your layout wrap => maxi width  */
+	#speakker.mini {	width:790px; } /* your layout wrap => mini width  */
+	
+	#speakker.maxi #skActControl,
+	#speakker.maxi #skScrubbler  
+									{ width:520px; } /* maxi width:520px; => 960px */
+	#speakker.maxi						
+		#skRightBlock { width:240px;} /*  maxi width:240px; => 960px */
+		
+	#speakker.maxi
+#skModuleControl 	{ width:105px; }
+
+/*-------------------------------------------------------------------*/
+		
+	#speakker.mini #skActControl,
+	#speakker.mini #skScrubbler  
+									{ width:388px; } /* mini width:388px; = 790px */
+	#speakker.mini						
+		#skRightBlock { width:70px; } /*  mini width:70px; => 790px */
+		
+	#speakker.mini
+#skModuleControl 	{ width:85px; }
 			
 			
 /* SPEAKKER BASIC --------------------------------------- */
@@ -120,6 +138,21 @@ h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }
 }
 .dark #skFacebook {
 	background:transparent url('../img/dark/sk-facebook.png') left top no-repeat;
+}
+.dark #skFacebook:hover {
+	background:transparent url('../img/dark/sk-facebook.png') left bottom no-repeat;
+}
+.dark #skTwitter {
+	background:transparent url('../img/dark/sk-twitter.png') left top no-repeat;
+}
+.dark #skTwitter:hover {
+	background:transparent url('../img/dark/sk-twitter.png') left bottom no-repeat;
+}
+.dark #skDownload {
+	background:transparent url('../img/dark/sk-download.png') left top no-repeat;
+}
+.dark #skDownload:hover {
+	background:transparent url('../img/dark/sk-download.png') left bottom no-repeat;
 }
 /* MODULE DIMENSIONS */
 #skControls {
@@ -168,6 +201,7 @@ h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }
 	float:left;
 	padding-bottom:17px;
 	border-bottom:1px solid #000;
+	position:relative;
 }
 /* MODULE CONTROLS */
 #skMainControl,
@@ -187,7 +221,6 @@ h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }
 	padding:17px 17px 12px 17px;
 	float:right;
 	height:33px;
-	width:105px;
 }
 #skVolumeControl { 
 	float:left;
@@ -246,7 +279,6 @@ h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }
 	height:32px;
 	float:left;
 	cursor:pointer;
-	margin-left:14px;
 }
 a#skEdit,
 a#skUrl {
@@ -362,11 +394,23 @@ a#skUrl {
 	left:17px;
 	z-index:8;
 }
-#skFacebook {
+#skFacebook,
+#skTwitter {
 	width:28px;
 	height:32px;
 	display:bock;
 	float:left;
+	text-indent:-99999px;
+}
+#skTwitter {
+	margin-left:12px;
+}
+#skDownload {
+	width:67px;
+	height:32px;
+	position:absolute;
+	top:148px;
+	left:17px;
 	text-indent:-99999px;
 }
 /* WHEN NO COVER ADDED */
