@@ -1,17 +1,33 @@
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
 mark, rp, rt, ruby, summary, time{ display: inline }
 
-
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
 body{
 	background:#60667b;
-	font: normal normal 12px/12px Tahoma, Arial, Helvetica, Verdana, sans-serif; 
+	font: normal normal 14px/12px Tahoma, Arial, Helvetica, Verdana, sans-serif;
+	text-shadow: 0px -1px 0px #3f4353;
+	color:#fff;
 }
 
-h1{ font-size: 4.4em; font-weight: normal; }
-h2{ font-size: 2.8em; font-weight: bold; }
-h3{ font-size: 1.6em; font-weight: bold; }
-h4{ font-size: 1.2em; font-weight: bold; }
+@font-face {
+	font-family: 'DINNeuzeitGroteskLTLightRegul';
+	src: url('../fonts/din_1-webfont.eot');
+	src: local(' '), url('../fonts/din_1-webfont.woff') format('woff'), url('../fonts/din_1-webfont.ttf') format('truetype'), url('../fonts/din_1-webfont.svg#webfontnjHhrgKZ') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
+h1{ font-size: 1.6em; font-weight: normal; font-family:"DINNeuzeitGroteskLTLightRegul", Arial, Helvetica, sans-serif; padding:0 0 20px; }
+h2{ font-size: 1.4em; font-weight: normal; padding:20px 0;}
+p { padding:0 0 10px; }
+a { color:#fff; font-weight:bold;}
+a:hover{ color:#b8c6ef; text-decoration:none;}
+#navigation { list-style-type:none; float:right;}
+#navigation li { float:left;}
 /* Reusable classes */
 
 /* Left & Right alignment */
@@ -19,16 +35,23 @@ h4{ font-size: 1.2em; font-weight: bold; }
 .right{ float: right; }
 
 /* The inside class provides consistent padding. To be used often! */
-.inside{ padding: 20px; }
+.inside,.inside-plus { padding: 20px; float:left; line-height:20px; width:940px}
+.inside-plus{ padding: 40px 20px 20px;}
 
 /* The fraction classes are useful for column lists */
-.half, .third, .quarter, .fifth, .sixth{ width: 100%; }
-.half li, .third li, .quarter li, .fifth li, .sixth li{ float: left; }
-.half li{ padding-right: 5%; width: 45% }
+.half, .half-pad, .third, .quarter, .fifth, .sixth, .two-third {  padding:0; float: left; }
+.half li, .third li, .quarter li, .fifth li, .sixth li { float: left; list-style-type:none;}
+.half li { padding-right: 5%; width: 45% }
 .third li{  padding-right: 5%; width: 28.3% }
 .quarter li{  padding-right: 5%; width: 20% }
 .fifth li{  padding-right: 5%; width: 15% }
 
+.two-third { padding-right: 5%; width: 70% }
+.half { width: 50%}
+.third {  padding-right: 5%; width: 28.3% }
+.quarter {  width: 25% }
+.fifth {  padding-right: 5%; width: 15% }
+.half-pad { padding-left: 5%; width: 45%}
 /* For when a <br /> just ain't enough */
 .separator{
 	clear: both;
@@ -41,10 +64,8 @@ h4{ font-size: 1.2em; font-weight: bold; }
 #wrap {
 	margin: 0 auto;
 	position: relative;
-	width: 810px; /* width you like */
+	width: 960px; /* width you like */
 }
 #logo {
 	float: left;
-	margin:40px 0 0 17px;
 }
-h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }

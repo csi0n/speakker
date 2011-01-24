@@ -20,7 +20,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 		 #skScrubbler { border:1px solid #151515;}
 		 
 				#speakker,
-			#speakker a { color:#fcfcfc}
+			#speakker a { color:#fcfcfc; font-weight:normal;}
 #speakker a:hover { color:#b52b09}
 
 
@@ -29,29 +29,20 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	#speakker.maxi {	width:960px; } /* your layout wrap => maxi width  */
 	#speakker.mini {	width:790px; } /* your layout wrap => mini width  */
 	
-	#speakker.maxi #skActControl,
-	#speakker.maxi #skScrubbler  
-									{ width:520px; } /* maxi width:520px; => 960px */
-	#speakker.maxi						
-		#skRightBlock { width:240px;} /*  maxi width:240px; => 960px */
-		
-	#speakker.maxi
-#skModuleControl 	{ width:105px; }
-
-/*-------------------------------------------------------------------*/
 		
 	#speakker.mini #skActControl,
 	#speakker.mini #skScrubbler  
-									{ width:388px; } /* mini width:388px; = 790px */
-	#speakker.mini						
-		#skRightBlock { width:70px; } /*  mini width:70px; => 790px */
-		
-	#speakker.mini
-#skModuleControl 	{ width:85px; }
-			
+									{ width:386px; } /* mini width:386px; = 790px */
+	#speakker.maxi #skActControl,
+	#speakker.maxi #skScrubbler  
+									{ width:558px; } /* maxi width:520px; => 960px */
+	#speakker.maxi						
+	#skMiddleBlock,
+	#speakker.maxi	
+ ul#skArtistlist  { width:692px;} /*  maxi width:692px; => 960px */
 			
 /* SPEAKKER RESET & BASIC --------------------------------------- */
-#speakker audio, #speakker ul, #speakker li, 
+#speakker audio, #speakker li, 
 #speakker span, #speakker strong {
 	background: transparent;
 	border: 0 none;
@@ -131,12 +122,23 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	height:62px;
 }
 #skBiglayer {
-	background-image: url('../img/sk-openbg.png');
 	background-position:top left;
 	background-repeat:repeat-y;
 	margin:0 auto;
 	height:218px;
 	position:relative;
+}
+#speakker.mini.light #skBiglayer {
+	background-image: url('../img/sk-openbg-mini-light.png'); 
+}
+#speakker.maxi.light #skBiglayer {
+	background-image: url('../img/sk-openbg-maxi-light.png'); 
+}
+#speakker.mini.dark #skBiglayer { 
+	background-image: url('../img/sk-openbg-mini-dark.png'); 
+}
+#speakker.maxi.dark #skBiglayer { 
+	background-image: url('../img/sk-openbg-maxi-dark.png'); 
 }
 #skCopyright {
 	background:#252525 url('../img/sk-copyright.png') right bottom repeat-x;
@@ -147,15 +149,16 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	bottom:0;
 	left:0;
 	margin:0;
+	padding:0;
 }
 #skLeftBlock {
 	float:left;
-	width:97px;
+	width:95px;
 	padding:17px;
 }
 #skMiddleBlock {
 	float:left;
-	width:520px;
+	width:522px;
 	height:158px;
 	padding:17px;
 }
@@ -165,6 +168,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	padding-bottom:17px;
 	border-bottom:1px solid #000;
 	position:relative;
+	width:70px;
 }
 /* MODULE CONTROLS */
 #skMainControl,
@@ -181,6 +185,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	padding:15px 0px 14px;
 }
 #skModuleControl {
+	width:85px; 
 	padding:17px 17px 12px 17px;
 	float:right;
 	height:33px;
@@ -275,6 +280,9 @@ a#skUrl {
 }
 #skArtistlist a {
 	text-decoration:none;
+}
+#skArtistlist a.active {
+	color:#5d5c5c
 }
 #skArtistlist li {
 	margin:0 0 12px;
