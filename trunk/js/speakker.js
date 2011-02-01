@@ -5,11 +5,11 @@
  * Michel Maillard - porkhead.org
 */
 	$(document).ready(function() {
-		$('#skOpener').click(function () {
+		$('.skOpener').click(function () {
 			$(this).toggleClass('close');
-			$('#skBiglayer').slideToggle('slow');
+			$('.skBiglayer').slideToggle('slow');
 		});
-			$('#skOpener').trigger('click');
+			$('.skOpener').trigger('click');
 			$('.jspPane').jScrollPane({showArrows: true});
 	});
 	

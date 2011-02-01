@@ -11,39 +11,157 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 /* SPEAKKER START --------------------------------------- */
 /* INDIVIDUAL COLORS */
 
-			#skControls { background-color:#212121} 
-			#skBiglayer { background-color:#252525}
+			.skControls { background-color:#E4A500}
+			.skBiglayer { background-color:#F2B514}
 			
-		#skTimeRemain,
-	#skVolumeRemain { background-color:#9ca4be}
-				#skVolume,
-		 #skScrubbler { border:1px solid #151515;}
+		.skTimeRemain,
+	.skVolumeRemain { background-color:#611300}
+				.skVolume,
+		 .skScrubbler {border:1px solid #B58300}
+		 .skLeftBlock,
+	 .skMiddleBlock,
+	 			.skSocial { border-color:#000;}
 		 
-				#speakker,
-			#speakker a { color:#fcfcfc; font-weight:normal;}
-#speakker a:hover { color:#b52b09}
+				.speakker,
+			.speakker a { color:#000; font-weight:bold;}
+.speakker a:hover { color:#b52b09}
+				.speakker { text-shadow: 0px 1px 0px #ffca3f;}
+		.skArtistlist 
+				 a.active { color:#333 }
 
+/* INDIVIDUAL WITDH FOR BOTTOM PLAYER |<-- STANDARD WIDTH 790px -->|  */
 
-/* INDIVIDUAL WITDH FOR BOTTOM PLAYER - MINIMAL WIDTH POSSIBLE 790PX  */
-
-	#speakker.maxi {	width:960px; } /* your layout wrap => maxi width  */
-	#speakker.mini {	width:790px; } /* your layout wrap => mini width  */
+	 .speakker.fat  {	width:960px; } /* your layout wrap => fat width  */
 	
-		
-	#speakker.mini #skActControl,
-	#speakker.mini #skScrubbler  
-									{ width:386px; } /* mini width:386px; = 790px */
-	#speakker.maxi #skActControl,
-	#speakker.maxi #skScrubbler  
-									{ width:558px; } /* maxi width:520px; => 960px */
-	#speakker.maxi						
-	#skMiddleBlock,
-	#speakker.maxi	
- ul#skArtistlist  { width:692px;} /*  maxi width:692px; => 960px */
+	.speakker.fat .skActControl,
+	.speakker.fat .skScrubbler  
+								  { width:558px; } /* fat  => 960px */
+	.speakker.fat						
+	.skMiddleBlock,
+	.speakker.fat	
+ ul.skArtistlist  { width:692px;} /*  fat  => 960px */
+ 
+/* THEME DARK */
+.dark .skOpener.close {
+	background:transparent url('../img/dark/sk-close.png') right top no-repeat;
+}
+.dark .skOpener {
+	background:transparent url('../img/dark/sk-open.png') right top no-repeat;
+}
+.dark .skForwards {
+	background:transparent url('../img/dark/sk-forwards.png') left top no-repeat;
+}
+.dark .skBackwards {
+	background:transparent url('../img/dark/sk-backwards.png') left top no-repeat;
+}
+.dark .skPlay {
+	background:transparent url('../img/dark/sk-play.png') left top no-repeat;
+}
+.dark .skHeart {
+	background:transparent url('../img/dark/sk-heart.png') left top no-repeat;
+}
+.dark .skMute {
+	background:transparent url('../img/dark/sk-mute.png') left top no-repeat;
+}
+.dark .skLoud {
+	background:transparent url('../img/dark/sk-mute.png') left top no-repeat;
+}
+.dark .skLoop {
+	background:transparent url('../img/dark/sk-loop.png') left top no-repeat;
+}
+.dark .skFacebook {
+	background:transparent url('../img/dark/sk-facebook.png') left top no-repeat;
+}
+.dark .skFacebook:hover {
+	background:transparent url('../img/dark/sk-facebook.png') left bottom no-repeat;
+}
+.dark .skTwitter {
+	background:transparent url('../img/dark/sk-twitter.png') left top no-repeat;
+}
+.dark .skTwitter:hover {
+	background:transparent url('../img/dark/sk-twitter.png') left bottom no-repeat;
+}
+.dark .skDownload {
+	background:transparent url('../img/dark/sk-download.png') left top no-repeat;
+}
+.dark .skDownload:hover {
+	background:transparent url('../img/dark/sk-download.png') left bottom no-repeat;
+}
+.dark .skLeftBlock {
+	background-image: url('../img/dark/sk-leftblock.png');
+}
+.dark .skMiddleBlock {
+	background-image: url('../img/dark/sk-middleblock.png');
+}
+.dark .skRightBlock {
+	background-image: url('../img/dark/sk-rightblock.png');
+}
+.dark .skControls {
+	background-image:url('../img/dark/sk-controlbg.png');
+}
+
+/* THEME LIGHT */
+.light .skOpener.close {
+	background:transparent url('../img/light/sk-close.png') right top no-repeat;
+}
+.light .skOpener {
+	background:transparent url('../img/light/sk-open.png') right top no-repeat;
+}
+.light .skForwards {
+	background:transparent url('../img/light/sk-forwards.png') left top no-repeat;
+}
+.light .skBackwards {
+	background:transparent url('../img/light/sk-backwards.png') left top no-repeat;
+}
+.light .skPlay {
+	background:transparent url('../img/light/sk-play.png') left top no-repeat;
+}
+.light .skHeart {
+	background:transparent url('../img/light/sk-heart.png') left top no-repeat;
+}
+.light .skMute {
+	background:transparent url('../img/light/sk-mute.png') left top no-repeat;
+}
+.light .skLoud {
+	background:transparent url('../img/light/sk-mute.png') left top no-repeat;
+}
+.light .skLoop {
+	background:transparent url('../img/light/sk-loop.png') left top no-repeat;
+}
+.light .skFacebook {
+	background:transparent url('../img/light/sk-facebook.png') left top no-repeat;
+}
+.light .skFacebook:hover {
+	background:transparent url('../img/light/sk-facebook.png') left bottom no-repeat;
+}
+.light .skTwitter {
+	background:transparent url('../img/light/sk-twitter.png') left top no-repeat;
+}
+.light .skTwitter:hover {
+	background:transparent url('../img/light/sk-twitter.png') left bottom no-repeat;
+}
+.light .skDownload {
+	background:transparent url('../img/light/sk-download.png') left top no-repeat;
+}
+.light .skDownload:hover {
+	background:transparent url('../img/light/sk-download.png') left bottom no-repeat;
+}
+.light .skLeftBlock {
+	background-image: url('../img/light/sk-leftblock.png');
+}
+.light .skMiddleBlock {
+	background-image: url('../img/light/sk-middleblock.png');
+}
+.light .skRightBlock {
+	background-image: url('../img/light/sk-rightblock.png');
+}
+.light .skControls {
+	background-image:url('../img/light/sk-controlbg.png');
+}
 			
 /* SPEAKKER RESET & BASIC --------------------------------------- */
-#speakker audio, #speakker li, 
-#speakker span, #speakker strong {
+.speakker audio, .speakker li, 
+.speakker span, .speakker strong {
 	background: transparent;
 	border: 0 none;
 	font-size: 100%;
@@ -51,65 +169,18 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	padding: 0;
 	vertical-align: baseline; 
 }
-#speakker {
+.speakker {
 	font-size:11px;
 	font-family:"Century Gothic", Tahoma, Verdana, sans-serif;
-	text-shadow: 1px 1px 1px #111;
+	width:790px; /* Standard witdh for speakker */
 }
-#speakker {
+.speakker {
 	position: fixed;
 	bottom:0;
 	margin:0 auto;
 }
-/* THEME DARK */
-.dark #skOpener.close {
-	background:transparent url('../img/dark/sk-close.png') right top no-repeat;
-}
-.dark #skOpener {
-	background:transparent url('../img/dark/sk-open.png') right top no-repeat;
-}
-.dark #skForwards {
-	background:transparent url('../img/dark/sk-forwards.png') left top no-repeat;
-}
-.dark #skBackwards {
-	background:transparent url('../img/dark/sk-backwards.png') left top no-repeat;
-}
-.dark #skPlay {
-	background:transparent url('../img/dark/sk-play.png') left top no-repeat;
-}
-.dark #skHeart {
-	background:transparent url('../img/dark/sk-heart.png') left top no-repeat;
-}
-.dark #skMute {
-	background:transparent url('../img/dark/sk-mute.png') left top no-repeat;
-}
-.dark #skLoud {
-	background:transparent url('../img/dark/sk-mute.png') left top no-repeat;
-}
-.dark #skLoop {
-	background:transparent url('../img/dark/sk-loop.png') left top no-repeat;
-}
-.dark #skFacebook {
-	background:transparent url('../img/dark/sk-facebook.png') left top no-repeat;
-}
-.dark #skFacebook:hover {
-	background:transparent url('../img/dark/sk-facebook.png') left bottom no-repeat;
-}
-.dark #skTwitter {
-	background:transparent url('../img/dark/sk-twitter.png') left top no-repeat;
-}
-.dark #skTwitter:hover {
-	background:transparent url('../img/dark/sk-twitter.png') left bottom no-repeat;
-}
-.dark #skDownload {
-	background:transparent url('../img/dark/sk-download.png') left top no-repeat;
-}
-.dark #skDownload:hover {
-	background:transparent url('../img/dark/sk-download.png') left bottom no-repeat;
-}
 /* MODULES */
-#skControls {
-	background-image:url('../img/sk-controlbg.png');
+.skControls {
 	background-position:left top;
 	background-repeat:repeat-x;
 	text-align:left;
@@ -121,26 +192,14 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	margin:0 auto;
 	height:62px;
 }
-#skBiglayer {
+.skBiglayer {
 	background-position:top left;
 	background-repeat:repeat-y;
 	margin:0 auto;
 	height:218px;
 	position:relative;
 }
-#speakker.mini.light #skBiglayer {
-	background-image: url('../img/sk-openbg-mini-light.png'); 
-}
-#speakker.maxi.light #skBiglayer {
-	background-image: url('../img/sk-openbg-maxi-light.png'); 
-}
-#speakker.mini.dark #skBiglayer { 
-	background-image: url('../img/sk-openbg-mini-dark.png'); 
-}
-#speakker.maxi.dark #skBiglayer { 
-	background-image: url('../img/sk-openbg-maxi-dark.png'); 
-}
-#skCopyright {
+.skCopyright {
 	background:#252525 url('../img/sk-copyright.png') right bottom repeat-x;
 	border-top:1px solid #030303;
 	width:100%;
@@ -151,105 +210,120 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	margin:0;
 	padding:0;
 }
-#skLeftBlock {
+.skLeftBlock {
+	background-repeat:repeat;
+	background-position:left bottom;
 	float:left;
-	width:95px;
+	width:94px;
 	padding:17px;
+	height:158px;
+	border-style:solid;
+	border-right-width:1px;
 }
-#skMiddleBlock {
+.skMiddleBlock {
+	background-repeat:repeat;
+	background-position:left bottom;
 	float:left;
 	width:522px;
 	height:158px;
 	padding:17px;
+	border-style:solid;
+	border-right-width:1px;
+	overflow: hidden;
+	position: relative;
 }
-#skRightBlock {
-	padding:17px;
+.skRightBlock {
+	background-repeat:repeat;
+	background-position:right bottom;
 	float:left;
-	padding-bottom:17px;
-	border-bottom:1px solid #000;
 	position:relative;
-	width:70px;
+	width:104px;
+	height:192px;
+	text-align:center;
 }
 /* MODULE CONTROLS */
-#skMainControl,
-#skActControl { 
+.skMainControl,
+.skActControl { 
 	float:left;
 	position:relative;
 	height:33px;
 }
-#skMainControl { 
+.skMainControl { 
 	padding:17px 32px 12px 17px;
 	width:97px;
 }
-#skActControl {
+.skActControl {
+	width:385px; /* Standard witdh for speakker */
 	padding:15px 0px 14px;
+	
 }
-#skModuleControl {
+.skModuleControl {
 	width:85px; 
 	padding:17px 17px 12px 17px;
 	float:right;
 	height:33px;
 }
-#skVolumeControl { 
+.skVolumeControl { 
 	float:left;
 	position:relative;
 	width:108px;
 	height:33px;
 	padding:17px 0px 12px 29px;
 }
-#skOpener.close {
+.skOpener.close {
 	width:26px;
 	height:28px;
 	float:right;
 	cursor:pointer;
 }
-#skOpener {
+.skOpener {
 	width:26px;
 	height:28px;
 	float:right;
 	cursor:pointer;
 }
-#skForwards {
+.skForwards {
 	width:20px;
 	height:32px;
 	float:left;
 	cursor:pointer;
 }
-#skBackwards {
+.skBackwards {
 	width:20px;
 	height:32px;
 	float:left;
 	cursor:pointer;
 }
-#skPlay {
+.skPlay {
 	width:32px;
 	height:33px;
+	margin:0 12px;
 	float:left;
 	cursor:pointer;
 }
-#skHeart {
+.skHeart {
 	width:18px;
 	height:25px;
 	float:left;
 }
-#skMute,
-#skLoud {
+.skMute,
+.skLoud {
 	width:26px;
 	height:32px;
 	float:left;
 	cursor:pointer;
 }
-#skLoud {
+.skLoud {
 	float:right;
 }
-#skLoop {
+.skLoop {
 	width:26px;
 	height:32px;
 	float:left;
 	cursor:pointer;
 }
-a#skEdit,
-a#skUrl {
+a.skEdit,
+a.skUrl {
 	background:transparent url('../img/sk-edit.png') right 4px no-repeat;
 	text-transform:uppercase;
 	text-decoration:none;
@@ -258,41 +332,48 @@ a#skUrl {
 	margin:6px 0 0 17px;
 	padding-right:17px;
 }
-a#skUrl {
+a.skEdit,
+a.skUrl { 
+	color:#fcfcfc;
+	text-shadow: 1px 1px 1px #111;
+	font-weight:normal;
+}
+a.skEdit:hover,
+a.skUrl:hover { 
+	color:#b52b09;
+}
+a.skUrl {
 	color:#5d5c5c;
 	background:none;
 	padding-right:0px;
 	margin:6px 17px 0 0;
 	float:right;
 }
-#skWiki,
-#skArtistlist { 
+.skWiki,
+.skArtistlist { 
 	list-style-type: none;
 	margin-top:12px;
 }
-#skWiki a.lastfm {
+.skWiki a.lastfm {
 	background:transparent url('../img/sk-lastfm.png') right 2px no-repeat;
 	padding-right:24px;
 }
-#skWiki a {
+.skWiki a {
 	text-decoration:none;
 	line-height:24px;
 }
-#skArtistlist a {
+.skArtistlist a {
 	text-decoration:none;
 }
-#skArtistlist a.active {
-	color:#5d5c5c
-}
-#skArtistlist li {
+.skArtistlist li {
 	margin:0 0 12px;
 }
-#skArtistlist {
+.skArtistlist {
 	width:520px;
 	margin:0;
 	padding:0;
 }
-#skAct {
+.skAct {
 	width:276px;
 	float:left;
 	padding:0 12px;
@@ -300,13 +381,14 @@ a#skUrl {
 	height:24px;
 	overflow:hidden;
 }
-#skTime { 
+.skTime { 
 	width:65px;
 	float:right;
 	line-height:24px;
 	text-align:right;
 }
-#skScrubbler {
+.skScrubbler {
+	width:385px; /* Standard witdh for speakker */
 	background-color:#000;
 	float:none;
 	height:2px;
@@ -315,7 +397,7 @@ a#skUrl {
 	bottom:15px;
 	z-index:3;
 }
-#skLoad {
+.skLoad {
 	background-color:#2e2e2e;
 	float:none;
 	height:2px;
@@ -324,7 +406,7 @@ a#skUrl {
 	left:1px;
 	z-index:4;
 }
-#skTimeRemain {
+.skTimeRemain {
 	float:none;
 	height:2px;
 	position:absolute;
@@ -332,14 +414,14 @@ a#skUrl {
 	left:1px;
 	z-index:5;
 }
-#skVolumeWidth { 
+.skVolumeWidth { 
 	width:48px;
 	position: absolute;
 	left:57px;
 	bottom:15px;
 	float:none;
 }
-#skVolume {
+.skVolume {
 	background-color:#000;
 	width:100%;
 	height:2px;
@@ -348,7 +430,7 @@ a#skUrl {
 	bottom:12px;
 	z-index:6;
 }
-#skVolumeRemain {
+.skVolumeRemain {
 	float:none;
 	height:2px;
 	position:absolute;
@@ -357,7 +439,7 @@ a#skUrl {
 	z-index:7;
 	cursor:pointer;
 }
-#skLabel {
+.skLabel {
 	background:transparent url('../img/sk-label.png') left top no-repeat;
 	width:94px;
 	height:75px;
@@ -366,18 +448,25 @@ a#skUrl {
 	left:17px;
 	z-index:8;
 }
-#skFacebook,
-#skTwitter {
+.skSocial {
+	width:70px;
+	border-style:solid;
+	border-bottom-width:1px;
+	padding:17px;
+	float:left;
+}
+.skFacebook,
+.skTwitter {
 	width:28px;
 	height:32px;
 	display:bock;
 	float:left;
 	text-indent:-99999px;
 }
-#skTwitter {
+.skTwitter {
 	margin-left:12px;
 }
-#skDownload {
+.skDownload {
 	width:67px;
 	height:32px;
 	position:absolute;
@@ -386,20 +475,17 @@ a#skUrl {
 	text-indent:-99999px;
 }
 /* WHEN NO COVER ADDED */
-#skCover {
+.skCover {
 	background:transparent url('../img/sk-nocover.png') left top no-repeat;
 	width:72px;
 	height:72px;
 	overflow:hidden;
 }
 /* HELPER AND SCROLLER */ 
-.expand {
-	margin:0 12px;
-}
-.jspContainer {
+/*.jspContainer {
 	overflow: hidden;
 	position: relative;
-}
+}*/
 .jspPane {
 	position: absolute;
 	padding:0;
