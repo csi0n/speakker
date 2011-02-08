@@ -11,6 +11,11 @@
 		});
 			$('.skOpener').trigger('click');
 			$('.jspPane').jScrollPane({showArrows: true});
+			
+		$('.skPlay').click(function(){
+				$(this).toggleClass('pause');
+			});
+
 	});
 	
 /*! Copyright (c) 2010 Brandon Aaron (http://brandonaaron.net)
