@@ -8,27 +8,37 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 */
 
 
-/* SPEAKKER START --------------------------------------- */
-/* INDIVIDUAL COLORS */
+/* SPEAKKER DARK --------------------------------------- */
+/* INDIVIDUAL COLORS BLOCKS */
 
-			.skControls { background-color:#E4A500}
-			.skBiglayer { background-color:#F2B514}
-			
-		.skTimeRemain,
-	.skVolumeRemain { background-color:#611300}
-				.skVolume,
-		 .skScrubbler {border:1px solid #B58300}
+			.skControls { background-color:#212121}
+			.skBiglayer { background-color:#252525}
 		 .skLeftBlock,
 	 .skMiddleBlock,
 	 			.skSocial { border-color:#000;}
-		 
-				.speakker,
-			.speakker a { color:#000; font-weight:bold;}
-.speakker a:hover { color:#b52b09}
-				.speakker { text-shadow: 0px 1px 0px #ffca3f;}
-		.skArtistlist 
-				 a.active { color:#333 }
 
+/* VOLUME COLORS  --------------------------------------*/
+				.skVolume,
+		 .skScrubbler { border:1px solid #151515} 
+		 		.skVolume,
+		 .skScrubbler { background-color:#000;}
+					.skLoad { background-color:#2E2E2E;}
+		.skTimeRemain,
+	.skVolumeRemain { background-color:#9CA4BE}
+	
+					
+/* FONT COLORS  --------------------------------------*/	 
+				.speakker,
+			.speakker a { color:#fcfcfc; font-weight:bold;}
+.speakker a:hover { color:#b52b09}
+				.speakker { text-shadow: 1px 1px 1px #111;}
+		.skArtistlist 
+				 a.active { color:#5d5c5c }
+				 
+/* SCROLLER COLORS ----------------------------------*/
+	      .jspDrag { background-color:#171717;}
+	.jspDrag:hover { background-color:#090909;}	
+	
 /* INDIVIDUAL WITDH FOR BOTTOM PLAYER |<-- STANDARD WIDTH 790px -->|  */
 
 	 .speakker.fat  {	width:960px; } /* your layout wrap => fat width  */
@@ -41,124 +51,6 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	.speakker.fat	
  ul.skArtistlist  { width:692px;} /*  fat  => 960px */
  
-/* THEME DARK */
-.dark .skOpener.close {
-	background:transparent url('../img/dark/sk-close.png') right top no-repeat;
-}
-.dark .skOpener {
-	background:transparent url('../img/dark/sk-open.png') right top no-repeat;
-}
-.dark .skForwards {
-	background:transparent url('../img/dark/sk-forwards.png') left top no-repeat;
-}
-.dark .skBackwards {
-	background:transparent url('../img/dark/sk-backwards.png') left top no-repeat;
-}
-.dark .skPlay {
-	background:transparent url('../img/dark/sk-play.png') left top no-repeat;
-}
-.dark .skHeart {
-	background:transparent url('../img/dark/sk-heart.png') left top no-repeat;
-}
-.dark .skMute {
-	background:transparent url('../img/dark/sk-mute.png') left top no-repeat;
-}
-.dark .skLoud {
-	background:transparent url('../img/dark/sk-mute.png') left top no-repeat;
-}
-.dark .skLoop {
-	background:transparent url('../img/dark/sk-loop.png') left top no-repeat;
-}
-.dark .skFacebook {
-	background:transparent url('../img/dark/sk-facebook.png') left top no-repeat;
-}
-.dark .skFacebook:hover {
-	background:transparent url('../img/dark/sk-facebook.png') left bottom no-repeat;
-}
-.dark .skTwitter {
-	background:transparent url('../img/dark/sk-twitter.png') left top no-repeat;
-}
-.dark .skTwitter:hover {
-	background:transparent url('../img/dark/sk-twitter.png') left bottom no-repeat;
-}
-.dark .skDownload {
-	background:transparent url('../img/dark/sk-download.png') left top no-repeat;
-}
-.dark .skDownload:hover {
-	background:transparent url('../img/dark/sk-download.png') left bottom no-repeat;
-}
-.dark .skLeftBlock {
-	background-image: url('../img/dark/sk-leftblock.png');
-}
-.dark .skMiddleBlock {
-	background-image: url('../img/dark/sk-middleblock.png');
-}
-.dark .skRightBlock {
-	background-image: url('../img/dark/sk-rightblock.png');
-}
-.dark .skControls {
-	background-image:url('../img/dark/sk-controlbg.png');
-}
-
-/* THEME LIGHT */
-.light .skOpener.close {
-	background:transparent url('../img/light/sk-close.png') right top no-repeat;
-}
-.light .skOpener {
-	background:transparent url('../img/light/sk-open.png') right top no-repeat;
-}
-.light .skForwards {
-	background:transparent url('../img/light/sk-forwards.png') left top no-repeat;
-}
-.light .skBackwards {
-	background:transparent url('../img/light/sk-backwards.png') left top no-repeat;
-}
-.light .skPlay {
-	background:transparent url('../img/light/sk-play.png') left top no-repeat;
-}
-.light .skHeart {
-	background:transparent url('../img/light/sk-heart.png') left top no-repeat;
-}
-.light .skMute {
-	background:transparent url('../img/light/sk-mute.png') left top no-repeat;
-}
-.light .skLoud {
-	background:transparent url('../img/light/sk-mute.png') left top no-repeat;
-}
-.light .skLoop {
-	background:transparent url('../img/light/sk-loop.png') left top no-repeat;
-}
-.light .skFacebook {
-	background:transparent url('../img/light/sk-facebook.png') left top no-repeat;
-}
-.light .skFacebook:hover {
-	background:transparent url('../img/light/sk-facebook.png') left bottom no-repeat;
-}
-.light .skTwitter {
-	background:transparent url('../img/light/sk-twitter.png') left top no-repeat;
-}
-.light .skTwitter:hover {
-	background:transparent url('../img/light/sk-twitter.png') left bottom no-repeat;
-}
-.light .skDownload {
-	background:transparent url('../img/light/sk-download.png') left top no-repeat;
-}
-.light .skDownload:hover {
-	background:transparent url('../img/light/sk-download.png') left bottom no-repeat;
-}
-.light .skLeftBlock {
-	background-image: url('../img/light/sk-leftblock.png');
-}
-.light .skMiddleBlock {
-	background-image: url('../img/light/sk-middleblock.png');
-}
-.light .skRightBlock {
-	background-image: url('../img/light/sk-rightblock.png');
-}
-.light .skControls {
-	background-image:url('../img/light/sk-controlbg.png');
-}
-			
 /* SPEAKKER RESET & BASIC --------------------------------------- */
 .speakker audio, .speakker li, 
 .speakker span, .speakker strong {
@@ -179,6 +71,9 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	bottom:0;
 	margin:0 auto;
 }
+.speakker a {
+	outline:none;
+}
 /* MODULES */
 .skControls {
 	background-position:left top;
@@ -189,6 +84,8 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	-moz-border-radius-topright: 10px;
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-rigtht-radius: 10px;
 	margin:0 auto;
 	height:62px;
 }
@@ -270,57 +167,28 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	height:33px;
 	padding:17px 0px 12px 29px;
 }
-.skOpener.close {
-	width:26px;
-	height:28px;
+.skOpener,
+.skOpener.close,
+.skLoud {
 	float:right;
-	cursor:pointer;
-}
-.skOpener {
-	width:26px;
-	height:28px;
-	float:right;
-	cursor:pointer;
-}
-.skForwards {
-	width:20px;
-	height:32px;
-	float:left;
-	cursor:pointer;
-}
-.skBackwards {
-	width:20px;
-	height:32px;
-	float:left;
 	cursor:pointer;
 }
 .skPlay {
-	width:32px;
-	height:33px;
 	margin:0 12px;
-	float:left;
-	cursor:pointer;
 }
-.skHeart {
-	width:18px;
-	height:25px;
-	float:left;
-}
+.skHeart,
+.skPlay,
+.skForwards,
+.skBackwards,
 .skMute,
-.skLoud {
-	width:26px;
-	height:32px;
-	float:left;
-	cursor:pointer;
-}
-.skLoud {
-	float:right;
-}
 .skLoop {
-	width:26px;
-	height:32px;
 	float:left;
 	cursor:pointer;
+}
+.skHeart { 
+	background:transparent url('../img/sk-heart.png') left top no-repeat; 
+	width:18px; 
+	height:25px;
 }
 a.skEdit,
 a.skUrl {
@@ -389,7 +257,6 @@ a.skUrl {
 }
 .skScrubbler {
 	width:385px; /* Standard witdh for speakker */
-	background-color:#000;
 	float:none;
 	height:2px;
 	position:absolute;
@@ -398,7 +265,6 @@ a.skUrl {
 	z-index:3;
 }
 .skLoad {
-	background-color:#2e2e2e;
 	float:none;
 	height:2px;
 	position:absolute;
@@ -422,7 +288,6 @@ a.skUrl {
 	float:none;
 }
 .skVolume {
-	background-color:#000;
 	width:100%;
 	height:2px;
 	position:absolute;
@@ -457,8 +322,6 @@ a.skUrl {
 }
 .skFacebook,
 .skTwitter {
-	width:28px;
-	height:32px;
 	display:bock;
 	float:left;
 	text-indent:-99999px;
@@ -467,8 +330,6 @@ a.skUrl {
 	margin-left:12px;
 }
 .skDownload {
-	width:67px;
-	height:32px;
 	position:absolute;
 	top:148px;
 	left:17px;
@@ -481,11 +342,6 @@ a.skUrl {
 	height:72px;
 	overflow:hidden;
 }
-/* HELPER AND SCROLLER */ 
-/*.jspContainer {
-	overflow: hidden;
-	position: relative;
-}*/
 .jspPane {
 	position: absolute;
 	padding:0;
@@ -509,21 +365,23 @@ a.skUrl {
 	position: relative;
 }
 .jspDrag {
-	background: #bbd;
 	position: relative;
 	top: 0;
 	left: 0;
 	cursor: pointer;
+	left:2px;
+	width:12px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 }
 .jspArrow {
-	background: #50506d;
 	text-indent: -20000px;
 	display: block;
 	cursor: pointer;
 }
 .jspArrow.jspDisabled {
 	cursor: default;
-	background: #80808d;
 }
 .jspVerticalBar .jspArrow {
 	height: 16px;
@@ -531,3 +389,81 @@ a.skUrl {
 .jspVerticalBar .jspArrow:focus {
 	outline: none;
 }
+
+/* THEME LIGHT */
+.light .skBackwards,
+.light .skForwards,
+.light .skOpener,
+.light .skOpener.close,
+.light .skDownload,
+.light .skFacebook,
+.light .skTwitter,
+.light .skLoop,
+.light .skLoud,
+.light .skMute,
+.light .skPlay,
+.light .skPlay.pause,
+.light .jspArrow.jspArrowUp.jspDisabled,
+.light .jspArrow.jspArrowUp,
+.light .jspArrow.jspArrowDown.jspDisabled,
+.light .jspArrow.jspArrowDown { background-image: url('../img/light/sk-light.png'); }
+.light .skLeftBlock { background-image: url('../img/light/sk-leftblock.png'); }
+.light .skMiddleBlock { background-image: url('../img/light/sk-middleblock.png'); }
+.light .skRightBlock { background-image: url('../img/light/sk-rightblock.png'); }
+.light .skControls { background-image:url('../img/light/sk-controlbg.png'); }
+
+/* THEME DARK */
+.dark .skBackwards,
+.dark .skForwards,
+.dark .skOpener,
+.dark .skOpener.close,
+.dark .skDownload,
+.dark .skFacebook,
+.dark .skTwitter,
+.dark .skLoop,
+.dark .skLoud,
+.dark .skMute,
+.dark .skPlay,
+.dark .skPlay.pause,
+.dark .jspArrow.jspArrowUp.jspDisabled,
+.dark .jspArrow.jspArrowUp,
+.dark .jspArrow.jspArrowDown.jspDisabled,
+.dark .jspArrow.jspArrowDown { background-image: url('../img/dark/sk-dark.png'); }
+.dark .skLeftBlock { background-image: url('../img/dark/sk-leftblock.png'); }
+.dark .skMiddleBlock { background-image: url('../img/dark/sk-middleblock.png'); }
+.dark .skRightBlock { background-image: url('../img/dark/sk-rightblock.png'); }
+.dark .skControls { background-image:url('../img/dark/sk-controlbg.png'); }
+
+/* ICONS POSITION */
+.skBackwards { background-position:  0 0; height: 32px; width: 20px; }
+.skBackwards:hover { background-position:  0 -32px; }
+.skForwards { background-position:  0 -64px; height: 32px; width: 20px; }
+.skForwards:hover { background-position:  0 -96px; }
+.skOpener.close { background-position:  -24px 0; height: 28px; width: 26px; }
+.skOpener.close:hover { background-position:  -24px -29px; }
+.skDownload { background-position:  -50px 0; height: 32px; width: 67px; }
+.skDownload:hover { background-position:  -50px -32px; }
+.skFacebook { background-position:  -50px -64px; height: 33px; width: 28px; }
+.skFacebook:hover { background-position:  -50px -98px; }
+.skTwitter { background-position:  -78px -64px; height: 33px; width: 28px; }
+.skTwitter:hover { background-position:  -78px -98px; }
+.skLoop { background-position:  -24px -57px; height: 32px; width: 26px; }
+.skLoop:hover { background-position:  -24px -89px; }
+.skLoud { background-position:  -24px -120px; height: 32px; width: 26px; }
+.skLoud:hover { background-position:  -24px -152px; }
+.skMute { background-position:  -24px -184px; height: 32px; width: 26px; }
+.skMute:hover { background-position:  -24px -216px; }
+.skOpener { background-position:  -24px -248px; height: 28px; width: 26px; }
+.skOpener:hover { background-position:  -24px -278px; }
+.skPlay.pause { background-position:  -50px -132px; height: 34px; width: 32px; }
+.skPlay.pause:hover { background-position:  -50px -167px; }
+.skPlay { background-position:  -82px -132px; height: 34px; width: 32px; }
+.skPlay:hover { background-position:  -82px -167px; }
+.jspArrow.jspArrowDown.jspDisabled,
+.jspArrow.jspArrowDown.jspDisabled:hover  { background-position:  0 -128px; height: 16px; width: 16px; }
+.jspArrow.jspArrowDown { background-position:  0 -144px; height: 16px; width: 16px; }
+.jspArrow.jspArrowDown:hover { background-position:  0 -160px; }
+.jspArrow.jspArrowUp.jspDisabled,
+.jspArrow.jspArrowUp.jspDisabled:hover { background-position:  0 -176px; height: 16px; width: 16px; }
+.jspArrow.jspArrowUp { background-position:  0 -192px; height: 16px; width: 16px; }
+.jspArrow.jspArrowUp:hover { background-position:  0 -208px; height: 16px; width: 16px; }
