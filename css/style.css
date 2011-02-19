@@ -35,7 +35,7 @@ a:hover{ color:#b8c6ef; text-decoration:none;}
 .right{ float: right; }
 
 /* The inside class provides consistent padding. To be used often! */
-.inside,.inside-plus { padding: 40px 0; float:left; line-height:20px;}
+.inside,.inside-plus { padding: 40px 0; float:left; line-height:20px; width:100%}
 
 /* The fraction classes are useful for column lists */
 .half, .half-pad, .third, .quarter, .fifth, .sixth, .two-third {  padding:0; float: left; }
