@@ -243,7 +243,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 .mspeakker.light .skFacebook,
 .mspeakker.light .skTwitter { background-image: url('../img/light/sk-light.png'); }
 .mspeakker.light .skLeftBlock { background-image: url('../img/light/sk-leftblock.png'); }
-.mspeakker.light .skRightBlock { background-image: url('../img/light/sk-middleblock.png'); }
+.mspeakker.light .skRightBlock { background-image: url('../img/light/sk-rightblock.png'); }
 .mspeakker.light .skControls { background-image:url('../img/light/sk-controlbg.png'); }
 
 /* THEME DARK */
@@ -257,7 +257,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 .mspeakker.dark .skFacebook,
 .mspeakker.dark .skTwitter { background-image: url('../img/dark/sk-dark.png'); }
 .mspeakker.dark .skLeftBlock { background-image: url('../img/dark/sk-leftblock.png'); }
-.mspeakker.dark .skRightBlock { background-image: url('../img/dark/sk-middleblock.png'); }
+.mspeakker.dark .skRightBlock { background-image: url('../img/dark/sk-rightblock.png'); }
 .mspeakker.dark .skControls { background-image:url('../img/dark/sk-controlbg.png'); }
 
 .mspeakker .skBackwards { background-position:  0 0; height: 32px; width: 20px; }

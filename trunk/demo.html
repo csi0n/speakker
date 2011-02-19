@@ -16,7 +16,19 @@
 <!--[if lt IE 9]>
 	<script type="text/javascript" src="js/centeredBox.js"></script>
 <![endif]-->
-<!--[if IE]><link rel="stylesheet" href="css/ie/ie7.css" type="text/css" media="screen"><![endif]-->
+<!-- DEMO MODE DON'T NEED THIS -->
+<script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js"></script>
+<script type="text/javascript">
+   $(function() {
+		$("#button").click(function(){
+			$(".dark").switchClass('dark', 'light', 'slow');
+			$(".light").switchClass('light', 'dark', 'slow');
+			$(this).text($(this).text() == 'Light Theme' ? 'Dark Theme' : 'Light Theme');
+			return false;	
+		});
+	});
+	</script>
+<!-- /DEMOMODE -->
 </head>
 <body>
 	<div id="wrap">
@@ -26,7 +38,8 @@
 		<div class="separator">&nbsp;</div>
 		
 		<div class="inside-plus">
-			<div class="mspeakker light left">
+		
+			<div class="mspeakker dark left">
 				<div class="skControls">
 					<div class="skAct">Tame Impala - Why Won't You Make Up Your Mind</div>
 				</div>
@@ -56,6 +69,7 @@
 					</div>
 				</div>
 			</div>
+							<p><a href="#" id="button">Dark Theme</a> | Standard speakker came with a light and dark theme. This can be easely change to custom colors or even custom control icons.</p>
 		</div>
 		
 		<!--speakker code-->
