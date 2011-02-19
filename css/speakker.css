@@ -144,6 +144,7 @@ ul.skArtistlist  { width:692px;} /*  fat  => 960px */
 	height:158px;
 	border-style:solid;
 	border-right-width:1px;
+	z-index:0;
 }
 .skMiddleBlock {
 	background-repeat:repeat;
