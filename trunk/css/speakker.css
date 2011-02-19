@@ -4,52 +4,79 @@
 ||__|||__|||__|||__|||__|||__|||__|||__||
 |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
 
-PORKHEAD.ORG AND PROJEKKTOR.COM 2010
+PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 */
-
 
 /* SPEAKKER DARK --------------------------------------- */
 /* INDIVIDUAL COLORS BLOCKS */
-
-			.skControls { background-color:#212121}
-			.skBiglayer { background-color:#252525}
-		 .skLeftBlock,
-	 .skMiddleBlock,
-	 			.skSocial { border-color:#000;}
+.dark .skControls { background-color:#212121}
+.dark .skBiglayer { background-color:#252525}
+.dark .skLeftBlock,
+.dark .skMiddleBlock,
+.dark .skSocial { border-color:#000;}
 
 /* VOLUME COLORS  --------------------------------------*/
-				.skVolume,
-		 .skScrubbler { border:1px solid #151515} 
-		 		.skVolume,
-		 .skScrubbler { background-color:#000;}
-					.skLoad { background-color:#2E2E2E;}
-		.skTimeRemain,
-	.skVolumeRemain { background-color:#9CA4BE}
+.dark .skVolume,
+.dark .skScrubbler { border:1px solid #151515} 
+.dark .skVolume,
+.dark .skScrubbler { background-color:#000;}
+.dark .skLoad { background-color:#2E2E2E;}
+.dark .skTimeRemain,
+.dark .skVolumeRemain { background-color:#9CA4BE}
+
+/* FONT COLORS  --------------------------------------*/	 
+.dark,
+.dark a { color:#fcfcfc; font-weight:bold;}
+.dark a:hover { color:#b52b09}
+.dark { text-shadow: 1px 1px 1px #111;}
+.dark .skArtistlist a.active { color:#5d5c5c }
+				 
+/* SCROLLER COLORS ----------------------------------*/
+.dark .jspDrag { background-color:#171717;}
+.dark .jspDrag:hover { background-color:#090909;}	 
+
+
+/* SPEAKKER LIGHT --------------------------------------- */
+/* INDIVIDUAL COLORS BLOCKS */
+.light .skControls { background-color:#E1E1E1}
+.light .skBiglayer { background-color:#EBEBEB}
+.light .skLeftBlock,
+.light .skMiddleBlock,
+.light .skSocial { border-color:#000;}
+
+/* VOLUME COLORS  --------------------------------------*/
+.light .skVolume,
+.light .skScrubbler { border:1px solid #CACACA} 
+.light .skVolume,
+.light .skScrubbler { background-color:#fff;}
+.light .skLoad { background-color:#A41F35;}
+.light .skTimeRemain,
+.light .skVolumeRemain { background-color:#611300}
 	
 					
 /* FONT COLORS  --------------------------------------*/	 
-				.speakker,
-			.speakker a { color:#fcfcfc; font-weight:bold;}
-.speakker a:hover { color:#b52b09}
-				.speakker { text-shadow: 1px 1px 1px #111;}
-		.skArtistlist 
-				 a.active { color:#5d5c5c }
-				 
+.light,
+.light a { color:#000; font-weight:bold;}
+.light a:hover { color:#b52b09}
+.light { text-shadow: 0px 1px 0px #b9b2ba;}
+.light .skArtistlist a.active { color:#333 }
+
 /* SCROLLER COLORS ----------------------------------*/
-	      .jspDrag { background-color:#171717;}
-	.jspDrag:hover { background-color:#090909;}	
+.light .jspDrag { background-color:#B0B0B0;}
+.light .jspDrag:hover { background-color:#090909;}	
 	
+
 /* INDIVIDUAL WITDH FOR BOTTOM PLAYER |<-- STANDARD WIDTH 790px -->|  */
 
-	 .speakker.fat  {	width:960px; } /* your layout wrap => fat width  */
+.speakker.fat  		{	width:960px; } /* your layout wrap => fat width  */
 	
-	.speakker.fat .skActControl,
-	.speakker.fat .skScrubbler  
-								  { width:558px; } /* fat  => 960px */
-	.speakker.fat						
-	.skMiddleBlock,
-	.speakker.fat	
- ul.skArtistlist  { width:692px;} /*  fat  => 960px */
+.speakker.fat .skActControl,
+.speakker.fat .skScrubbler  
+							 	 { width:558px; } /* fat  => 960px */
+.speakker.fat						
+.skMiddleBlock,
+.speakker.fat	
+ul.skArtistlist  { width:692px;} /*  fat  => 960px */
  
 /* SPEAKKER RESET & BASIC --------------------------------------- */
 .speakker audio, .speakker li, 
@@ -63,7 +90,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 }
 .speakker {
 	font-size:11px;
-	font-family:"Century Gothic", Tahoma, Verdana, sans-serif;
+	font-family:"Century Gothic", "Apple Gothic", "Gill Sans", Tahoma, sans-serif;
 	width:790px; /* Standard witdh for speakker */
 }
 .speakker {
@@ -108,6 +135,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2010
 	padding:0;
 }
 .skLeftBlock {
+	position:relative;
 	background-repeat:repeat;
 	background-position:left bottom;
 	float:left;
@@ -458,7 +486,7 @@ a.skUrl {
 .skPlay.pause { background-position:  -50px -132px; height: 34px; width: 32px; }
 .skPlay.pause:hover { background-position:  -50px -167px; }
 .skPlay { background-position:  -82px -132px; height: 34px; width: 32px; }
-.skPlay:hover { background-position:  -82px -167px; }
+.skPlay:hover { background-position:  -82px -168px; }
 .jspArrow.jspArrowDown.jspDisabled,
 .jspArrow.jspArrowDown.jspDisabled:hover  { background-position:  0 -128px; height: 16px; width: 16px; }
 .jspArrow.jspArrowDown { background-position:  0 -144px; height: 16px; width: 16px; }
