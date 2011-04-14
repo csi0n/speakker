@@ -29,11 +29,14 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 .dark a { color:#fcfcfc; font-weight:bold;}
 .dark a:hover { color:#b52b09}
 .dark { text-shadow: 1px 1px 1px #111;}
-.dark .skArtistlist a.active { color:#5d5c5c }
+.dark .skArtistlist .active { color:#5d5c5c }
 				 
 /* SCROLLER COLORS ----------------------------------*/
 .dark .jspDrag { background-color:#171717;}
 .dark .jspDrag:hover { background-color:#090909;}	 
+
+
+
 
 
 /* SPEAKKER LIGHT --------------------------------------- */
@@ -59,7 +62,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 .light a { color:#000; font-weight:bold;}
 .light a:hover { color:#b52b09}
 .light { text-shadow: 0px 1px 0px #b9b2ba;}
-.light .skArtistlist a.active { color:#333 }
+.light .skArtistlist .active { color:#333 }
 
 /* SCROLLER COLORS ----------------------------------*/
 .light .jspDrag { background-color:#B0B0B0;}
@@ -79,7 +82,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 ul.skArtistlist  { width:692px;} /*  fat  => 960px */
  
 /* SPEAKKER RESET & BASIC --------------------------------------- */
-.speakker audio, .speakker li, 
+.speakker li, 
 .speakker span, .speakker strong {
 	background: transparent;
 	border: 0 none;
@@ -101,6 +104,9 @@ ul.skArtistlist  { width:692px;} /*  fat  => 960px */
 .speakker a {
 	outline:none;
 }
+
+
+
 /* MODULES */
 .skControls {
 	background-position:left top;
@@ -122,6 +128,7 @@ ul.skArtistlist  { width:692px;} /*  fat  => 960px */
 	margin:0 auto;
 	height:218px;
 	position:relative;
+	display: none; /* compacted by default*/
 }
 .skCopyright {
 	background:#252525 url('../img/sk-copyright.png') right bottom repeat-x;
@@ -197,23 +204,50 @@ ul.skArtistlist  { width:692px;} /*  fat  => 960px */
 	padding:17px 0px 12px 29px;
 }
 .skOpener,
-.skOpener.close,
+.skCloser,
 .skLoud {
 	float:right;
 	cursor:pointer;
 }
-.skPlay {
+.skPlay, .skPause {
 	margin:0 12px;
 }
 .skHeart,
 .skPlay,
+.skPause,
 .skForwards,
 .skBackwards,
 .skMute,
-.skLoop {
+.skLoopOn,
+.skLoopOff {
 	float:left;
 	cursor:pointer;
 }
+
+.skPause.inactive,
+.skPlay.inactive,
+.skLoopOn.inactive,
+.skLoopOff.inactive {
+	display: none;
+}
+
+.skForwards.inactive,
+.skBackwards.inactive
+{
+	-moz-opacity:.20;
+	filter:alpha(opacity=20);
+	opacity:.20;
+}
+
+.active {
+	display: block;
+	-moz-opacity:1;
+	filter:alpha(opacity=100);
+	opacity:1.00;	
+}
+
+
+
 .skHeart { 
 	background:transparent url('../img/sk-heart.png') left top no-repeat; 
 	width:18px; 
@@ -262,16 +296,24 @@ a.skUrl {
 .skArtistlist a {
 	text-decoration:none;
 }
+
+
 .skArtistlist li {
-	margin:0 0 12px;
+	height: 24px;
+	cursor: pointer;
 }
+
+.skArtistlist  li:hover { color:#b52b09}
+
 .skArtistlist {
 	width:520px;
+	height: 170px;
 	margin:0;
 	padding:0;
+	overflow: hidden;
 }
 .skAct {
-	width:276px;
+	width:260px;
 	float:left;
 	padding:0 12px;
 	line-height:24px;
@@ -279,7 +321,7 @@ a.skUrl {
 	overflow:hidden;
 }
 .skTime { 
-	width:65px;
+	width:80px;
 	float:right;
 	line-height:24px;
 	text-align:right;
@@ -371,71 +413,26 @@ a.skUrl {
 	height:72px;
 	overflow:hidden;
 }
-.jspPane {
-	position: absolute;
-	padding:0;
-}
-.jspVerticalBar { /* width of bar */
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 16px;
-	height: 100%;
-	background: transparent;
-}
-.jspVerticalBar * {
-	margin: 0;
-	padding: 0;
-}
-.jspCap {
-	display: none;
-}
-.jspTrack {
-	position: relative;
-}
-.jspDrag {
-	position: relative;
-	top: 0;
-	left: 0;
-	cursor: pointer;
-	left:2px;
-	width:12px;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-.jspArrow {
-	text-indent: -20000px;
-	display: block;
-	cursor: pointer;
-}
-.jspArrow.jspDisabled {
-	cursor: default;
-}
-.jspVerticalBar .jspArrow {
-	height: 16px;
-}
-.jspVerticalBar .jspArrow:focus {
-	outline: none;
-}
+
 
 /* THEME LIGHT */
 .light .skBackwards,
 .light .skForwards,
 .light .skOpener,
-.light .skOpener.close,
+.light .skCloser,
 .light .skDownload,
 .light .skFacebook,
 .light .skTwitter,
-.light .skLoop,
+.light .skLoopOn,
+.light .skLoopOff,
 .light .skLoud,
 .light .skMute,
 .light .skPlay,
-.light .skPlay.pause,
+.light .skPause,
 .light .jspArrow.jspArrowUp.jspDisabled,
 .light .jspArrow.jspArrowUp,
-.light .jspArrow.jspArrowDown.jspDisabled,
-.light .jspArrow.jspArrowDown { background-image: url('../img/light/sk-light.png'); }
+.light .scrollbar-handle-up ,
+.light .scrollbar-handle-down  { background-image: url('../img/light/sk-light.png'); }
 .light .skLeftBlock { background-image: url('../img/light/sk-leftblock.png'); }
 .light .skMiddleBlock { background-image: url('../img/light/sk-middleblock.png'); }
 .light .skRightBlock { background-image: url('../img/light/sk-rightblock.png'); }
@@ -445,19 +442,18 @@ a.skUrl {
 .dark .skBackwards,
 .dark .skForwards,
 .dark .skOpener,
-.dark .skOpener.close,
+.dark .skCloser,
 .dark .skDownload,
 .dark .skFacebook,
 .dark .skTwitter,
-.dark .skLoop,
+.dark .skLoopOn,
+.dark .skLoopOff,
 .dark .skLoud,
 .dark .skMute,
 .dark .skPlay,
-.dark .skPlay.pause,
-.dark .jspArrow.jspArrowUp.jspDisabled,
-.dark .jspArrow.jspArrowUp,
-.dark .jspArrow.jspArrowDown.jspDisabled,
-.dark .jspArrow.jspArrowDown { background-image: url('../img/dark/sk-dark.png'); }
+.dark .skPause,
+.dark .scrollbar-handle-up,
+.dark .scrollbar-handle-down { background-image: url('../img/dark/sk-dark.png'); }
 .dark .skLeftBlock { background-image: url('../img/dark/sk-leftblock.png'); }
 .dark .skMiddleBlock { background-image: url('../img/dark/sk-middleblock.png'); }
 .dark .skRightBlock { background-image: url('../img/dark/sk-rightblock.png'); }
@@ -468,31 +464,64 @@ a.skUrl {
 .skBackwards:hover { background-position:  0 -32px; }
 .skForwards { background-position:  0 -64px; height: 32px; width: 20px; }
 .skForwards:hover { background-position:  0 -96px; }
-.skOpener.close { background-position:  -24px 0; height: 28px; width: 26px; }
-.skOpener.close:hover { background-position:  -24px -29px; }
+.skCloser { display: none; background-position:  -24px 0; height: 28px; width: 26px; }
+.skCloser:hover { background-position:  -24px -29px; }
 .skDownload { background-position:  -50px 0; height: 32px; width: 67px; }
 .skDownload:hover { background-position:  -50px -32px; }
 .skFacebook { background-position:  -50px -64px; height: 33px; width: 28px; }
 .skFacebook:hover { background-position:  -50px -98px; }
 .skTwitter { background-position:  -78px -64px; height: 33px; width: 28px; }
 .skTwitter:hover { background-position:  -78px -98px; }
-.skLoop { background-position:  -24px -57px; height: 32px; width: 26px; }
-.skLoop:hover { background-position:  -24px -89px; }
+
+.skLoopOn, .skLoopOff { background-position:  -24px -57px; height: 32px; width: 26px; }
+.skLoopOn:hover, .skLoopOff:hover { background-position:  -24px -89px; }
+.skLoopOn {-moz-opacity:.40; filter:alpha(opacity=40); opacity:.40;}
+
 .skLoud { background-position:  -24px -120px; height: 32px; width: 26px; }
 .skLoud:hover { background-position:  -24px -152px; }
 .skMute { background-position:  -24px -184px; height: 32px; width: 26px; }
 .skMute:hover { background-position:  -24px -216px; }
 .skOpener { background-position:  -24px -248px; height: 28px; width: 26px; }
 .skOpener:hover { background-position:  -24px -278px; }
-.skPlay.pause { background-position:  -50px -132px; height: 34px; width: 32px; }
-.skPlay.pause:hover { background-position:  -50px -167px; }
+.skPause { background-position:  -50px -132px; height: 34px; width: 32px; }
+.skPause:hover { background-position:  -50px -167px; }
 .skPlay { background-position:  -82px -132px; height: 34px; width: 32px; }
 .skPlay:hover { background-position:  -82px -168px; }
-.jspArrow.jspArrowDown.jspDisabled,
-.jspArrow.jspArrowDown.jspDisabled:hover  { background-position:  0 -128px; height: 16px; width: 16px; }
-.jspArrow.jspArrowDown { background-position:  0 -144px; height: 16px; width: 16px; }
-.jspArrow.jspArrowDown:hover { background-position:  0 -160px; }
-.jspArrow.jspArrowUp.jspDisabled,
-.jspArrow.jspArrowUp.jspDisabled:hover { background-position:  0 -176px; height: 16px; width: 16px; }
-.jspArrow.jspArrowUp { background-position:  0 -192px; height: 16px; width: 16px; }
-.jspArrow.jspArrowUp:hover { background-position:  0 -208px; height: 16px; width: 16px; }
+
+.scrollbar-handle-up.jspDisabled,
+.scrollbar-handle-up.jspDisabled:hover  { background-position:  0 -128px; height: 16px; width: 16px; }
+.scrollbar-handle-down { background-position:  0 -144px; height: 16px; width: 16px; }
+.scrollbar-handle-down:hover { background-position:  0 -160px; }
+.scrollbar-handle-up.jspDisabled,
+.scrollbar-handle-up.jspDisabled:hover { background-position:  0 -176px; height: 16px; width: 16px; }
+.scrollbar-handle-up{ background-position:  0 -192px; height: 16px; width: 16px; }
+.scrollbar-handle-up:hover { background-position:  0 -208px; height: 16px; width: 16px; }
+
+.scrollbar-pane {
+	margin-right: 16px;
+}
+
+.scrollbar-handle-container {
+    background: transparent;
+    width: 15px;
+}
+
+
+ .scrollbar-handle:hover {
+	background-color:#090909;
+}
+
+
+/* handle */
+.scrollbar-handle {
+	cursor: pointer;
+	width:15px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#171717;
+}
+
+
+
+

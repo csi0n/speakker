@@ -2,157 +2,61 @@
 <html lang="en">
 <head>
 <title>Speakker | The new way of audio</title>
+
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="description" content="Audioplayer from a new generation">
 <link rel="Shortcut Icon" type="image/ico" href="img/speakker.ico">
+	
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	
+<!-- speakker relevant stuff starts here -->
 <link rel="stylesheet" href="css/queries/netbooks-tablets.css" type="text/css" media="screen and (max-width: 1007px)" />
-
 <link rel="stylesheet" href="css/speakker.css"  type="text/css" media="screen">
 <link rel="stylesheet" href="css/mspeakker.css" type="text/css" media="screen">
 								
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/speakker.js"></script>
-<!--[if lt IE 9]>
-	<script type="text/javascript" src="js/centeredBox.js"></script>
-<![endif]-->
-<!-- DEMO MODE DON'T NEED THIS -->
-<script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js"></script>
+<script type="text/javascript" src="js/projekktor.min.js"></script>
+<script type="text/javascript" src="speakker.min.js"></script>
+<!-- speakker relevant stuff ends here -->
+
+<!-- instantiate speakker (just a small one, one audiofile) -->
 <script type="text/javascript">
-   $(function() {
-		$("#button").click(function(){
-			$(".dark").switchClass('dark', 'light', 'slow');
-			$(".light").switchClass('light', 'dark', 'slow');
-			$(this).text($(this).text() == 'Light Theme' ? 'Dark Theme' : 'Light Theme');
-			return false;	
-		});
+$(document).ready(function() {
+	$('.speakkerSmall').speakker({
+		file: 'sound/paniqcosmicwalken.mp3',
+		poster: 'img/album-cover.png',
+		title: 'Paniq - Cosmic Walken',
+		theme: 'light'
 	});
-	</script>
-<!-- /DEMOMODE -->
+});
+</script>
+
 </head>
 <body>
 	<div id="wrap">
-		<div class="inside-plus">
-			<div id="logo"><img src="img/speakker-dark.png" alt="speakker a projekktor projekkt"></div>
-		</div>
-		<div class="separator">&nbsp;</div>
 		
 		<div class="inside-plus">
-		
-			<div class="mspeakker dark left">
-				<div class="skControls">
-					<div class="skAct">Tame Impala - Why Won't You Make Up Your Mind</div>
-				</div>
-				<div class="skLeftBlock">
-					<div class="skLabel"></div>
-					<div class="skCover"><img src="img/ms-album-cover.png" alt="album-cover" /></div>
-					<div class="skVolumeControl">
-						<div class="skMute"></div>
-						<div class="skVolumeWidth">
-							<div class="skVolume"></div>
-							<div class="skVolumeRemain" style="width:40%;"></div>
-						</div>
-						<div class="skLoud"></div>
-					</div>
-				</div>
-				<div class="skRightBlock">
-					<div class="skTime">3:19 | 0:05</div>
-					<div class="skMainControl">
-						<div class="skBackwards"></div>
-						<div class="skPlay pause"></div>
-						<div class="skForwards"></div>
-					</div>
-					<div class="skSocial">
-						<a href="#" class="skFacebook" title="share your mix on facebook">share your mix on facebook</a>
-						<a href="#" class="skTwitter" title="share your mix on twitter">share your mix on twitter</a>
-						<a href="#" class="skDownload" title="get the mix">get the mix</a>
-					</div>
-				</div>
-			</div>
-							<p><a href="#" id="button">Dark Theme</a> | Standard speakker came with a light and dark theme. This can be easely change to custom colors or even custom control icons.</p>
-		</div>
-		
-		<!--speakker code-->
-		<div class="speakker dark">
-			<!--General Control-->
-			<div class="skControls">
-				<div class="skMainControl">
-					<div class="skBackwards"></div>
-					<div class="skPlay pause"></div>
-					<div class="skForwards"></div>
-				</div>
-				<!--Act Control-->
-				<div class="skActControl">
-					<div class="skHeart"></div>
-					<div class="skAct">Tame Impala - Why Won't You Make Up Your Mind</div>
-					<div class="skTime">3:19 | 0:05</div>
-					<div class="skScrubbler"></div>
-					<div class="skLoad" style="width:80%;"></div>
-					<div class="skTimeRemain" style="width:40%;"></div>
-				</div>
-				<!--Volume Control-->
-				<div class="skVolumeControl">
-					<div class="skMute"></div>
-					<div class="skVolumeWidth">
-						<div class="skVolume"></div>
-						<div class="skVolumeRemain" style="width:40%;"></div>
-					</div>
-					<div class="skLoud"></div>
-				</div>
-				<div class="skModuleControl">
-					<!--Loop Optinal-->
-					<div class="skLoop"></div>
-					<!--Opener Control-->
-					<div class="skOpener"></div>
-				</div>
-			</div>
-			<div class="skBiglayer">
-				<!--Right Block-->
-				<div class="skLeftBlock">
-					<div class="skLabel"></div>
-					<div class="skCover"><img src="img/album-cover.png" alt="album-cover" /></div>
-					<ul class="skWiki">
-						<li><a class="lastfm" href="http://www.last.fm/music/Tame+Impala" target="_blank">Last.fm</a></li>
-						<li><a class="wiki" href="http://en.wikipedia.org/wiki/Tame_Impala" target="_blank">Wikipedia</a></li>
-					</ul>
-				</div>
-				<!--Middle Block-->
-				<div class="skMiddleBlock jspContainer">
-					<div class="jspPane" style="height:160px;">
-						<ul class="skArtistlist">
-							<li><a class="active" href="#">01. Tame Impala - Why Won't You Make Up Your Mind</a></li>
-							<li><a href="#">02. Chico Magnetic Band - My Sorrow</a></li>
-							<li><a href="#">03. Brains - Black on Black</a></li>
-							<li><a href="#">04. Monkey3 – Watching You (feat. John Garcia)</a></li>
-							<li><a href="#">05. Ray Barretto – The Soul Drummers</a></li>
-							<li><a href="#">06. Led Zeppelin - No Quarter</a></li>
-							<li><a href="#">07. The Undisputed Truth – Smiling Faces Sometimes</a></li>
-							<li><a href="#">08. Mananana - Dududu</a></li>
-							<li><a href="#">09. Mananana - Dududu</a></li>
-							<li><a href="#">10. Mananana - Dududu</a></li>
-							<li><a href="#">11. Mananana - Dududu</a></li>
-							<li><a href="#">12. Mananana - Dududu</a></li>
-							<li><a href="#">13. Mananana - Dududu</a></li>
-							<li><a href="#">14. Mananana - Dududu</a></li>
-							<li><a href="#">15. Mananana - Dududu</a></li>
-							<li><a href="#">16. Mananana - Dududu</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="skRightBlock">
-					<div class="skSocial">
-						<a href="#" class="skFacebook" title="share your mix on facebook">share your mix on facebook</a>
-						<a href="#" class="skTwitter" title="share your mix on twitter">share your mix on twitter</a>
-					</div>
-					<a href="#" class="skDownload" title="get the mix">get the mix</a>				
-				</div>
-				<!--Copyright Block-->
-				<p class="skCopyright">
-					<a class="skEdit" href="#">edit playlist</a>
-					<a class="skUrl" href="http://www.speakker.com" target="_blank">speakker under the hood</a>				</p>
+			<div id="logo">
+				<img src="img/speakker-dark.png" alt="speakker a projekktor projekkt">
 			</div>
 		</div>
-		<!--speakker code end-->
+		
+		<div class="inside">
+			<h1>Thanks for downloading Speakker</h1>
+			<p>
+				This is just a small demo for instant testing. A more complex (playlist) setup can be seen at the <a href="http://www.speakker.com/demo/">project&acute;s homepage</a>.
+				To rebuild these demos on your page please follow take a peek into the source of this file or visit our tiny little <a href="http://www.projekktor.com/docs/speakker" target="_blank">Quick Install Guide</a>.
+				Have fun!
+			</p>
+		
+			<div class="separator">&nbsp;</div>
+			<div class="speakkerSmall"></div>
+			<div id="about">
+				<p class="left">speakker is a last.fm-resque audio player built upon the famous <a href="http://www.projekktor.com" title="projekktor website">projekktor video player</a>.
+				<p class="right">speakker repository at <a href="http://code.google.com/p/speakker/" title="Google Code repository">Google Code</a></p>
+				<p class="separator">&copy; 2011-2012 <a href="http://www.porkhead.org">Porkhead.org</a> &amp; <a href="http://www.spinningairwhale.com">Spinning Airwhale</a></p>
+			</div>
+		</div>
 	</div>
 	<script type="text/javascript" src="js/noise.js"></script>
 </body>
