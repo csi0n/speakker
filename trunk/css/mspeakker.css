@@ -203,6 +203,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 	bottom:13px;
 	left:1px;
 	z-index:7;
+	width: 50%;
 	cursor:pointer;
 }
 .mspeakker .skVolumeControl { 
@@ -212,17 +213,33 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 	height:17px;
 	padding:10px 0 0;
 }
-.skPlay {
+.skPlay, .skPause {
 	margin:0 12px;
 }
 .mspeakker .skHeart,
 .mspeakker .skPlay,
+.mspeakker .skPause,
 .mspeakker .skForwards,
 .mspeakker .skBackwards,
 .mspeakker .skMute {
+	display: block;
 	float:left;
 	cursor:pointer;
 }
+.mspeakker .skPause.inactive,
+.mspeakker .skPlay.inactive,
+.mspeakker .skLoopOn.inactive,
+.mspeakker .skLoopOff.inactive {
+	display: none;
+}
+
+.mspeakker .active {
+	display: block;
+	-moz-opacity:1;
+	filter:alpha(opacity=100);
+	opacity:1.00;	
+}
+
 .mspeakker .skLoud {
 	float:right;
 	cursor:pointer;
@@ -238,7 +255,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 .mspeakker.light .skLoud,
 .mspeakker.light .skMute,
 .mspeakker.light .skPlay,
-.mspeakker.light .skPlay.pause,
+.mspeakker.light .skPause,
 .mspeakker.light .skDownload,
 .mspeakker.light .skFacebook,
 .mspeakker.light .skTwitter { background-image: url('../img/light/sk-light.png'); }
@@ -252,7 +269,7 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 .mspeakker.dark .skLoud,
 .mspeakker.dark .skMute,
 .mspeakker.dark .skPlay,
-.mspeakker.dark .skPlay.pause,
+.mspeakker.dark .skPause,
 .mspeakker.dark .skDownload,
 .mspeakker.dark .skFacebook,
 .mspeakker.dark .skTwitter { background-image: url('../img/dark/sk-dark.png'); }
@@ -264,8 +281,8 @@ PORKHEAD.ORG AND PROJEKKTOR.COM 2011
 .mspeakker .skBackwards:hover { background-position:  0 -32px; }
 .mspeakker .skForwards { background-position:  0 -64px; height: 32px; width: 20px; }
 .mspeakker .skForwards:hover { background-position:  0 -96px; }
-.mspeakker .skPlay.pause { background-position:  -50px -132px; height: 34px; width: 32px; }
-.mspeakker .skPlay.pause:hover { background-position:  -50px -167px; }
+.mspeakker .skPause { background-position:  -50px -132px; height: 34px; width: 32px; }
+.mspeakker .skPause:hover { background-position:  -50px -167px; }
 .mspeakker .skPlay { background-position:  -82px -132px; height: 34px; width: 32px; }
 .mspeakker .skPlay:hover { background-position:  -82px -168px; }
 .mspeakker .skLoud { background-position:  0 -228px; height: 16px; width: 18px; }
